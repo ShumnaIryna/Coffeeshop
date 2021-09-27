@@ -264,7 +264,6 @@ a {
 
 .base__coffee {
   display: flex;
-  margin: 0 -33px;
 }
 
 .base__coffee-box {
@@ -284,7 +283,6 @@ a {
 }
 
 .base__coffee-box .info-text {
-  max-width: 230px;
   margin: 0 auto;
 }
 
