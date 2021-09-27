@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./fonts/fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./js/vendors/swiper-bundle.min.js">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Coffee shop</title>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+
+            <div class="header__left">
+                <!-- <div class="header__left-info"></div> -->
+                <a href="#" class="header__left-logo">
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <h1 class="header__title">YOUR <span class="header__title_bg">PERSONALIZED</span> COFFE</h1>
+
+
+                <!-- <div class="header__left-img"></div> -->
+            </div>
+
+            <div class="header__middle">
+                <img src="./img/hero-img.png" alt="hero foto">
+                <button type="button" class="watch-me"></button>
+            </div>
+
+            <div class="header__right">
+                <ul class="header__actions">
+                    <li class="header__action-basket">
+                        <button class="btn-icon"><i class="fas fa-shopping-cart"></i></button>
+                    </li>
+                    <div class="header__action-number">
+                        <span>2</span>
+                    </div>
+                </ul>
+                <div class="header__nav">
+
+                    <ul class="header__nav-list">
+
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link header__main">TRANG CHỦ</a>
+                        </li>
+
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">COFFEE</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">PHIN MẠ MÀU</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">COMBO PHIN PHÊ</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">GIFTSET</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="base">
+            <h4 class="about-section">Your Personalized Coffee</h4>
+            <h2 class="title">COFFEE BUILD YOUR BASE</h2>
+            <div class="base__coffee">
+                <div class="base__coffee-box">
+                    <img src="./img/coffee-base-1.png" alt="foto coffee" class="base__coffee-img">
+                    <h3 class="subtitle">Nguồn gốc</h3>
+                    <p class="info-text">Những hạt cà phê Arabica, Robusta
+                        đạt chất lượng theo tiêu chuẩn quốc tế.</p>
+                </div>
+
+                <div class="base__coffee-box">
+                    <img src="./img/coffee-base-2.png" alt="foto coffee" class="base__coffee-img">
+                    <h3 class="subtitle">Chất lượng</h3>
+                    <p class="info-text">Từng một hạt cà phê là cả một quá
+                        trình tập trung cao độ của nghệ nhân cà phê.
+                    </p>
+                </div>
+
+                <div class="base__coffee-box">
+                    <img src="./img/coffee-base-3.png" alt="foto coffee" class="base__coffee-img">
+                    <h3 class="subtitle">Các loại hạt</h3>
+                    <p class="info-text">70% chất lượng tách cà phê đến từ
+                        nguồn gốc và chất lượng green bean.</p>
+                </div>
+
+                <div class="base__coffee-box">
+                    <img src="./img/coffee-base-4.png" alt="foto coffee" class="base__coffee-img">
+                    <h3 class="subtitle">Pha chế</h3>
+                    <p class="info-text">Những hạt cà phê được lột xác qua
+                        quá trình rang xay kỹ lưỡng và nghiêm ngặt.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+        </section>
+
+        <footer class="footer">
+            <span class="footer__info">© Revo Coffee Việt Nam - 2018</span>
+        </footer>
+
+    </div>
+
+
+    <script src="./js/vendors/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+
+</html>

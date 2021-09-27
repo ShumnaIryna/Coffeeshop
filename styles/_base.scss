@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $main-font;
+  font: $main-font;
+  color: $main-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.about-section {
+  font: $h5-font;
+  color: $primary-color;
+  text-align: center;
+}
+
+.title {
+  font: $h2-font;
+  color: $primary-color;
+  text-align: center;
+}
+
+.subtitle {
+  font: $h3-font;
+  color: $title-color;
+  text-align: center;
+}
+
+.info-text {
+  text-align: center;
+}

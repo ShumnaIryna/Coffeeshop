@@ -1,0 +1,102 @@
+.header {
+  display: flex;
+  padding-bottom: 44px;
+
+  &__left {
+    width: 30%;
+    display: flex;
+    padding: 75px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    // &-logo {
+    // }
+  }
+
+  &__title {
+    padding-left: 400px;
+    font: $h1-font;
+    color: $primary-color;
+    z-index: 1;
+
+    &_bg {
+      padding: 0 15px;
+      margin: 0 -15px;
+      color: $background-white;
+      background: $minor-color;
+    }
+  }
+
+  &__middle {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__right {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    background: $background-blue;
+  }
+
+  &__actions {
+    display: flex;
+    position: relative;
+  }
+
+  &__action-basket {
+    padding: 85px 0 120px 55px;
+  }
+
+  &__action-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: $h6-font;
+    max-width: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 70px;
+    top: 73px;
+    color: $btn-color;
+    background-color: $minor-color;
+  }
+
+  &__nav {
+    padding-left: 56px;
+
+    &-link {
+      color: $white-color;
+      font: $h6-font;
+    }
+
+    &-link.header__main {
+      text-transform: uppercase;
+      font: $h4-font;
+    }
+
+    &-link:hover {
+      color: $minor-color;
+    }
+
+    &-item {
+      padding-bottom: 30px;
+    }
+  }
+
+  // &__main {
+  //   padding-bottom: 30px;
+  //   text-transform: uppercase;
+  //   font: $h4-font;
+  // }
+}
