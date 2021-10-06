@@ -9,6 +9,7 @@ body {
   font-family: $main-font;
   font: $main-font;
   color: $main-color;
+  background-color: $background-white;
 }
 
 h1,
@@ -42,18 +43,6 @@ a {
   margin: 0 auto;
 }
 
-.about-section {
-  font: $h5-font;
-  color: $primary-color;
-  text-align: center;
-}
-
-.title {
-  font: $h2-font;
-  color: $primary-color;
-  text-align: center;
-}
-
 .subtitle {
   font: $h3-font;
   color: $title-color;
@@ -62,4 +51,13 @@ a {
 
 .info-text {
   text-align: center;
+}
+
+.price {
+  font: $h5-font;
+  color: $minor-color;
+}
+
+.d-flex {
+  display: flex;
 }

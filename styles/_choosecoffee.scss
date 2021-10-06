@@ -1,0 +1,32 @@
+.choosecoffee {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    &-about .price {
+      display: block;
+      padding: 40px 0 10px;
+    }
+
+    &-about .subtitle {
+      padding-bottom: 25px;
+      text-align: left;
+    }
+
+    &-about .info-text {
+      padding-bottom: 40px;
+      text-align: left;
+    }
+  }
+  &__box-img {
+    background: $white-color;
+  }
+  &__box-about {
+    background: $true-white;
+  }
+}
