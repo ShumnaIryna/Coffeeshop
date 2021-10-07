@@ -71,19 +71,9 @@ a {
   margin: 0 auto;
 }
 
-.subtitle, .coffee-box__title {
+.subtitle, .coffee-box__title, .choosecoffee__title {
   font: 700 24px/1.16 "Nunito", Arial, Helvetica, sans-serif;
   color: #232c38;
-  text-align: center;
-}
-
-.info-text {
-  text-align: center;
-}
-
-.price {
-  font: 600 20px/1.2 "Nunito", Arial, Helvetica, sans-serif;
-  color: #c7a17a;
 }
 
 .d-flex {
@@ -174,6 +164,19 @@ a {
   background-color: #edf0f5;
 }
 
+.btn-product {
+  position: absolute;
+  border: none;
+  font: 700 24px/1.16 "Nunito", Arial, Helvetica, sans-serif;
+  width: 48px;
+  height: 48px;
+  padding: 15px 12px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #c7a17a;
+  cursor: pointer;
+}
+
 .header {
   display: flex;
 }
@@ -197,7 +200,7 @@ a {
 .header__title_bg {
   padding: 0 15px;
   margin: 0 -15px;
-  color: #f9fbff;
+  color: #fff;
   background: #c7a17a;
 }
 
@@ -320,37 +323,78 @@ a {
 
 .choosecoffee {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.choosecoffee--row {
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 }
 
 .choosecoffee__box {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 235px auto;
+  transition: box-shadow 0.3s;
 }
 
-.choosecoffee__box-about .price {
-  display: block;
-  padding: 40px 0 10px;
+.choosecoffee--row .choosecoffee__box {
+  grid-template-columns: none;
 }
 
-.choosecoffee__box-about .subtitle, .choosecoffee__box-about .coffee-box__title {
-  padding-bottom: 25px;
-  text-align: left;
+.choosecoffee__box-img {
+  width: 100%;
 }
 
-.choosecoffee__box-about .info-text {
-  padding-bottom: 40px;
-  text-align: left;
+@media (max-width: 1400px) {
+  .choosecoffee__box {
+    grid-template-columns: 200px auto;
+  }
+}
+
+.choosecoffee__box:hover {
+  box-shadow: 2px 2px 20px rgba(181, 181, 181, 0.6);
 }
 
 .choosecoffee__box-img {
   background: #edf0f5;
 }
 
+.choosecoffee--row .choosecoffee__box-img {
+  grid-template-columns: none;
+}
+
 .choosecoffee__box-about {
+  padding: 40px 10px 40px 45px;
   background: #fff;
+}
+
+@media (max-width: 1400px) {
+  .choosecoffee__box-about {
+    padding-left: 20px;
+  }
+}
+
+.choosecoffee__price {
+  display: block;
+  padding-bottom: 10px;
+  font: 600 20px/1.2 "Nunito", Arial, Helvetica, sans-serif;
+  color: #c7a17a;
+}
+
+.choosecoffee__title {
+  padding-bottom: 25px;
+}
+
+.choosecoffee--row .choosecoffee__title {
+  padding-bottom: 10px;
+}
+
+.choosecoffee__desc {
+  padding-bottom: 20px;
+}
+
+.choosecoffee--row .choosecoffee__desc {
+  padding-bottom: 30px;
 }
 
 .footer {
