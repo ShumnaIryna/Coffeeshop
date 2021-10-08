@@ -51,3 +51,23 @@ a {
 .d-flex {
   display: flex;
 }
+
+.swiper-wrapper {
+  margin: -20px;
+}
+.swiper-button-disabled {
+  display: none;
+}
+
+.swiper {
+  overflow: visible;
+  // filter: grayscale(50%);
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  filter: opacity(50%);
+}
+// .swiper-slide-prev {
+
+// }

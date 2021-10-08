@@ -61,7 +61,7 @@
   background: $minor-color;
   border: 1px solid $minor-color;
   border-radius: 19px;
-  padding: 5px 15px;
+  padding: 5px 10px;
   cursor: pointer;
   display: block;
   text-align: center;
@@ -88,9 +88,23 @@
   font: $h3-font;
   width: 48px;
   height: 48px;
-  padding: 15px 12px;
+  top: 475px;
   border-radius: 50%;
   color: $white-color;
   background-color: $minor-color;
   cursor: pointer;
+  z-index: 2;
+
+  &--rigth {
+    right: 45px;
+  }
+
+  &--left {
+    left: 45px;
+  }
+}
+
+.btn-product:hover {
+  background-color: $background-darkgray;
+  transition: all 0.3s;
 }

@@ -1,6 +1,7 @@
 .base {
   padding: 90px 120px 130px;
   position: relative;
+  overflow: hidden;
 
   &--drop-panel::before {
     position: absolute;

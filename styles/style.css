@@ -80,6 +80,23 @@ a {
   display: flex;
 }
 
+.swiper-wrapper {
+  margin: -20px;
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.swiper {
+  overflow: visible;
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  filter: opacity(50%);
+}
+
 .btn-icon {
   background-color: transparent;
   border: none;
@@ -143,7 +160,7 @@ a {
   background: #c7a17a;
   border: 1px solid #c7a17a;
   border-radius: 19px;
-  padding: 5px 15px;
+  padding: 5px 10px;
   cursor: pointer;
   display: block;
   text-align: center;
@@ -170,11 +187,25 @@ a {
   font: 700 24px/1.16 "Nunito", Arial, Helvetica, sans-serif;
   width: 48px;
   height: 48px;
-  padding: 15px 12px;
+  top: 475px;
   border-radius: 50%;
   color: #fff;
   background-color: #c7a17a;
   cursor: pointer;
+  z-index: 2;
+}
+
+.btn-product--rigth {
+  right: 45px;
+}
+
+.btn-product--left {
+  left: 45px;
+}
+
+.btn-product:hover {
+  background-color: #151d28;
+  transition: all 0.3s;
 }
 
 .header {
@@ -273,6 +304,7 @@ a {
 .base {
   padding: 90px 120px 130px;
   position: relative;
+  overflow: hidden;
 }
 
 .base--drop-panel::before {
@@ -325,6 +357,7 @@ a {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr;
+  padding: 20px;
 }
 
 .choosecoffee--row {
