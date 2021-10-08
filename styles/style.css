@@ -361,7 +361,7 @@ a {
 }
 
 .choosecoffee--row {
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .choosecoffee__box {
@@ -428,6 +428,12 @@ a {
 
 .choosecoffee--row .choosecoffee__desc {
   padding-bottom: 30px;
+}
+
+.choosecoffee__previous {
+  font: 300 14px/1.36 "Nunito", Arial, Helvetica, sans-serif;
+  color: #415167;
+  padding-left: 20px;
 }
 
 .footer {

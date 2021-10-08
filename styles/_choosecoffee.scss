@@ -5,7 +5,8 @@
   padding: 20px;
 
   &--row {
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    // grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   &__box {
@@ -68,5 +69,11 @@
     .choosecoffee--row & {
       padding-bottom: 30px;
     }
+  }
+
+  &__previous {
+    font: $h7-font;
+    color: $primary-color;
+    padding-left: 20px;
   }
 }
