@@ -19,6 +19,11 @@
     right: 0;
   }
 
+  &--big::before {
+    width: calc(100% - 385px);
+    background: $background-gray;
+  }
+
   &__subtitle {
     padding-bottom: 10px;
     font: $h5-font;

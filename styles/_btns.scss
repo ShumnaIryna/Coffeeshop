@@ -108,3 +108,15 @@
   background-color: $background-darkgray;
   transition: all 0.3s;
 }
+
+.navigation {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 90px;
+
+  &__tab {
+    font: $h2-font;
+    text-align: center;
+    color: $primary-color;
+  }
+}

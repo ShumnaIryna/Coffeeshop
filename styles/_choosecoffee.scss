@@ -8,6 +8,10 @@
     // grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     grid-template-columns: 1fr 1fr 1fr;
   }
+  &--giftset {
+    grid-gap: 0;
+    grid-template-columns: 1fr 90px;
+  }
 
   &__box {
     display: grid;
@@ -22,6 +26,10 @@
       width: 100%;
     }
 
+    &--gift {
+      grid-template-columns: 490px auto;
+    }
+
     @media (max-width: 1400px) {
       grid-template-columns: 200px auto;
     }
@@ -34,6 +42,13 @@
   &__box-img {
     background: $background-gray;
 
+    // &--pos {
+    //   position: absolute;
+    //   max-height: 350px;
+    //   left: 410px;
+    //   bottom: 132px;
+    // }
+
     .choosecoffee--row & {
       grid-template-columns: none;
     }
@@ -42,6 +57,10 @@
   &__box-about {
     padding: 40px 10px 40px 45px;
     background: $background-white1;
+
+    &--padding {
+      padding: 60px 60px 60px 300px;
+    }
     @media (max-width: 1400px) {
       padding-left: 20px;
     }
@@ -58,6 +77,10 @@
     @extend .subtitle;
     padding-bottom: 25px;
 
+    &--padding {
+      padding-bottom: 10px;
+    }
+
     .choosecoffee--row & {
       padding-bottom: 10px;
     }
@@ -65,6 +88,10 @@
 
   &__desc {
     padding-bottom: 20px;
+
+    &--width {
+      width: 420px;
+    }
 
     .choosecoffee--row & {
       padding-bottom: 30px;

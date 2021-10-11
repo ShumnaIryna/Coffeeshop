@@ -1,0 +1,18 @@
+.composition {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 45px;
+
+  &__box {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-gap: 10px;
+
+    &-img {
+      max-width: 100%;
+      max-height: 100%;
+      align-self: center;
+    }
+  }
+}
