@@ -95,6 +95,10 @@
   &__desc {
     padding-bottom: 20px;
 
+    &--padding {
+      padding: 0 60px 25px 0;
+    }
+
     .choosecoffee--row & {
       padding-bottom: 30px;
     }

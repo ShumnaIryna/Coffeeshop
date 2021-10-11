@@ -173,7 +173,7 @@ a {
 
 .btn.btn-ghost {
   background-color: transparent;
-  color: #c7a17a;
+  color: #415167;
   border: 1px solid transparent;
 }
 
@@ -485,6 +485,10 @@ a {
 
 .choosecoffee__desc {
   padding-bottom: 20px;
+}
+
+.choosecoffee__desc--padding {
+  padding: 0 60px 25px 0;
 }
 
 .choosecoffee--row .choosecoffee__desc {
