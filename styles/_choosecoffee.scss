@@ -2,7 +2,7 @@
   display: grid;
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr;
-  padding: 20px;
+  padding: 15px;
 
   &--row {
     // grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
@@ -11,6 +11,8 @@
   &--giftset {
     grid-gap: 0;
     grid-template-columns: 1fr 90px;
+    margin-left: 250px;
+    padding-right: 35px;
   }
 
   &__box {
@@ -22,12 +24,13 @@
       grid-template-columns: none;
     }
 
-    &-img {
-      width: 100%;
-    }
-
     &--gift {
-      grid-template-columns: 490px auto;
+      display: none;
+      grid-template-columns: 260px 1fr;
+      background: $background-white1;
+    }
+    &--active {
+      display: grid;
     }
 
     @media (max-width: 1400px) {
@@ -42,12 +45,18 @@
   &__box-img {
     background: $background-gray;
 
-    // &--pos {
-    //   position: absolute;
-    //   max-height: 350px;
-    //   left: 410px;
-    //   bottom: 132px;
-    // }
+    & > img {
+      max-width: 100%;
+    }
+
+    &--pos {
+      padding-top: 50px;
+      background: none;
+      & > img {
+        max-width: 200%;
+        transform: translateX(calc(-50% - 20px));
+      }
+    }
 
     .choosecoffee--row & {
       grid-template-columns: none;
@@ -58,9 +67,6 @@
     padding: 40px 10px 40px 45px;
     background: $background-white1;
 
-    &--padding {
-      padding: 60px 60px 60px 300px;
-    }
     @media (max-width: 1400px) {
       padding-left: 20px;
     }
@@ -88,10 +94,6 @@
 
   &__desc {
     padding-bottom: 20px;
-
-    &--width {
-      width: 420px;
-    }
 
     .choosecoffee--row & {
       padding-bottom: 30px;

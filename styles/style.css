@@ -208,16 +208,29 @@ a {
   transition: all 0.3s;
 }
 
-.navigation {
+.coffee-tabs {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 90px;
 }
 
-.navigation__tab {
+.coffee-tabs__tab {
   font: 900 30px/1.13 "Montserrat", Arial, Helvetica, sans-serif;
   text-align: center;
   color: #415167;
+  border: none;
+  opacity: 0.3;
+  background-color: #edf0f5;
+  cursor: pointer;
+}
+
+.coffee-tabs__tab--active {
+  opacity: 1;
+  background-color: #fff;
+}
+
+.coffee-tabs__tab:not(.coffee-tabs__tab--active):hover {
+  box-shadow: 2px 2px 20px rgba(181, 181, 181, 0.6);
 }
 
 .header {
@@ -374,7 +387,7 @@ a {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr;
-  padding: 20px;
+  padding: 15px;
 }
 
 .choosecoffee--row {
@@ -384,6 +397,8 @@ a {
 .choosecoffee--giftset {
   grid-gap: 0;
   grid-template-columns: 1fr 90px;
+  margin-left: 250px;
+  padding-right: 35px;
 }
 
 .choosecoffee__box {
@@ -396,12 +411,14 @@ a {
   grid-template-columns: none;
 }
 
-.choosecoffee__box-img {
-  width: 100%;
+.choosecoffee__box--gift {
+  display: none;
+  grid-template-columns: 260px 1fr;
+  background: #fff;
 }
 
-.choosecoffee__box--gift {
-  grid-template-columns: 490px auto;
+.choosecoffee__box--active {
+  display: grid;
 }
 
 @media (max-width: 1400px) {
@@ -418,6 +435,20 @@ a {
   background: #edf0f5;
 }
 
+.choosecoffee__box-img > img {
+  max-width: 100%;
+}
+
+.choosecoffee__box-img--pos {
+  padding-top: 50px;
+  background: none;
+}
+
+.choosecoffee__box-img--pos > img {
+  max-width: 200%;
+  transform: translateX(calc(-50% - 20px));
+}
+
 .choosecoffee--row .choosecoffee__box-img {
   grid-template-columns: none;
 }
@@ -425,10 +456,6 @@ a {
 .choosecoffee__box-about {
   padding: 40px 10px 40px 45px;
   background: #fff;
-}
-
-.choosecoffee__box-about--padding {
-  padding: 60px 60px 60px 300px;
 }
 
 @media (max-width: 1400px) {
@@ -458,10 +485,6 @@ a {
 
 .choosecoffee__desc {
   padding-bottom: 20px;
-}
-
-.choosecoffee__desc--width {
-  width: 420px;
 }
 
 .choosecoffee--row .choosecoffee__desc {
