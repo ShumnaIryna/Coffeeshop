@@ -55,3 +55,20 @@
     padding-bottom: 12px;
   }
 }
+
+@media (max-width: 1140px) {
+  .base__subtitle,
+  .base__title {
+    text-shadow: 0 0 2px $white-color;
+  }
+}
+
+@media (max-width: 1023px) {
+  .coffee-box {
+    width: 50%;
+
+    p {
+      padding-bottom: 20px;
+    }
+  }
+}

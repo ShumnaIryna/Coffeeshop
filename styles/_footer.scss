@@ -1,8 +1,9 @@
 .footer {
+  background-color: $background-gray;
+
   &__info {
     display: block;
     color: $primary-color;
-    background-color: $background-gray;
     padding: 20px 0;
     text-align: center;
   }

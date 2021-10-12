@@ -33,9 +33,9 @@
       display: grid;
     }
 
-    @media (max-width: 1400px) {
-      grid-template-columns: 200px auto;
-    }
+    // @media (max-width: 1400px) {
+    //   grid-template-columns: 200px auto;
+    // }
   }
 
   &__box:hover {
@@ -67,9 +67,9 @@
     padding: 40px 10px 40px 45px;
     background: $background-white1;
 
-    @media (max-width: 1400px) {
-      padding-left: 20px;
-    }
+    // @media (max-width: 1400px) {
+    //   padding-left: 20px;
+    // }
   }
 
   &__price {
@@ -108,5 +108,16 @@
     font: $h7-font;
     color: $primary-color;
     padding-left: 20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .choosecoffee {
+    &__box {
+      grid-template-columns: 200px auto;
+    }
+    &__box-about {
+      padding-left: 20px;
+    }
   }
 }

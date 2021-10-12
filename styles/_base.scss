@@ -67,3 +67,9 @@ a {
 .swiper-slide-prev {
   filter: opacity(50%);
 }
+
+@media (max-width: 1023px) {
+  .d-flex {
+    flex-wrap: wrap;
+  }
+}
