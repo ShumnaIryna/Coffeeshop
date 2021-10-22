@@ -266,7 +266,7 @@ a {
 
 @media (max-width: 768px) {
   .btn-product--location1 {
-    top: 1110px;
+    top: 1940px;
   }
   .group-btns {
     grid-template-columns: 1fr;
@@ -328,6 +328,12 @@ a {
   padding: 85px 0 120px 55px;
 }
 
+.header__action-menu {
+  display: none;
+  padding: 130px 0 0 0;
+  margin-left: -20px;
+}
+
 .header__action-number {
   display: flex;
   justify-content: center;
@@ -364,6 +370,33 @@ a {
 
 .header__nav-item {
   padding-bottom: 30px;
+}
+
+@media (max-width: 1023px) {
+  .header__nav {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 860px) {
+  .header__nav {
+    position: fixed;
+    z-index: 9;
+    width: 30%;
+    min-width: 275px;
+    background-color: #415167;
+    top: 150px;
+    right: 20px;
+    bottom: 0;
+    padding: 10px;
+    transform: translateX(-400%);
+  }
+  .header__nav-list {
+    font: 300 14px/1.36 "Nunito", Arial, Helvetica, sans-serif;
+  }
+  .header__action-menu {
+    display: block;
+  }
 }
 
 .base {
@@ -560,9 +593,45 @@ a {
   }
 }
 
+@media (max-width: 1200px) {
+  .choosecoffee__box {
+    grid-template-columns: 180px auto;
+  }
+  .choosecoffee__box-img--pos > img {
+    max-width: 150%;
+  }
+}
+
 @media (max-width: 1050px) {
   .choosecoffee {
     grid-template-columns: 1fr;
+  }
+  .choosecoffee--giftset {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 989px) {
+  .choosecoffee__box-img--pos > img {
+    max-width: 100%;
+  }
+  .choosecoffee__box-about {
+    padding-top: 0;
+  }
+  .choosecoffee__box--gift {
+    grid-template-columns: 400px;
+  }
+  .choosecoffee--giftset {
+    margin-left: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .choosecoffee__box {
+    grid-template-columns: 1fr;
+  }
+  .choosecoffee__box-img {
+    text-align: center;
   }
 }
 

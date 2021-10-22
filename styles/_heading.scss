@@ -51,6 +51,12 @@
     padding: 85px 0 120px 55px;
   }
 
+  &__action-menu {
+    display: none;
+    padding: 130px 0 0 0;
+    margin-left: -20px;
+  }
+
   &__action-number {
     display: flex;
     justify-content: center;
@@ -86,6 +92,39 @@
 
     &-item {
       padding-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .header {
+    &__nav {
+      padding-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .header {
+    &__nav {
+      position: fixed;
+      z-index: 9;
+      width: 30%;
+      min-width: 275px;
+      background-color: $primary-color;
+      top: 150px;
+      right: 20px;
+      bottom: 0;
+      padding: 10px;
+      transform: translateX(-400%);
+
+      &-list {
+        font: $h7-font;
+      }
+    }
+
+    &__action-menu {
+      display: block;
     }
   }
 }
