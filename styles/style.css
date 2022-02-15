@@ -399,6 +399,13 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  header .header__title {
+    font: 900 30px/1.13 "Montserrat", Arial, Helvetica, sans-serif;
+    padding-left: 150px;
+  }
+}
+
 .base {
   padding: 90px 120px 130px;
   position: relative;
@@ -473,6 +480,9 @@ a {
 }
 
 @media (max-width: 768px) {
+  .base {
+    padding: 50px 30px 50px;
+  }
   .coffee-box {
     width: 100%;
   }
@@ -632,6 +642,10 @@ a {
   }
   .choosecoffee__box-img {
     text-align: center;
+  }
+  .choosecoffee--giftset {
+    grid-template-columns: 80% 20%;
+    margin-left: 140px;
   }
 }
 

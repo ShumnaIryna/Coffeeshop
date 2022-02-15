@@ -128,3 +128,14 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    .header {
+      &__title {
+        font: $h2-font;
+        padding-left: 150px;
+      }
+    }
+  }
+}

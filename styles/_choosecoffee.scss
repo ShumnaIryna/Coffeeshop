@@ -179,5 +179,10 @@
         text-align: center;
       }
     }
+
+    &--giftset {
+      grid-template-columns: 80% 20%;
+      margin-left: 140px;
+    }
   }
 }
